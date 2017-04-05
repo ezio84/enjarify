@@ -1,3 +1,16 @@
+EDIT by ezio (quick instructions):
+
+get the jar from the apk with this command:
+python3 -O -m enjarify.main yourapp.apk
+
+then get the java files from the jar classes with the CFR tool (see its subfolder) with:
+java -jar cfr_0_121.jar yourapp-enjarify.jar --outputdir outputFolderPath
+
+
+###################################################################
+
+
+
 ### Introduction
 
 Enjarify is a tool for translating Dalvik bytecode to equivalent Java bytecode. This allows Java analysis tools to analyze Android applications.
